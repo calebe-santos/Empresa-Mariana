@@ -187,9 +187,7 @@ footer ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;flex-wrap:
 </a>
 
 <script>
-/* ============ CONTEÚDO EDITÁVEL ============ */
 const SITE = {
-  // Número no padrão internacional, só dígitos. Ex.: 5549999999999 (55 + DDD + número)
   whatsapp: "5500000000000",
   mensagemGeral: "Olá! Conheci a Essência Nails pelo site e gostaria de consultar os horários disponíveis para agendar um atendimento.",
   instagram: "", // link do perfil, ex.: https://instagram.com/seuperfil
@@ -200,7 +198,6 @@ const SITE = {
     ["Horários", "[a definir]", "clock"],
     ["Instagram", "[a definir]", "ig"]
   ],
-  // Fotos: coloque os arquivos em images/ e informe o caminho. Sem foto, aparece um espaço reservado.
   galeria: [
     { src: "", alt: "Unhas finalizadas em tom nude" },
     { src: "", alt: "Esmaltação em tom rosado" },
@@ -210,7 +207,6 @@ const SITE = {
     { src: "", alt: "Procedimento de manicure" }
   ]
 };
-// Exemplos provisórios, sem valores reais. Edite, remova ou inclua serviços aqui.
 const SERVICOS = [
   { nome: "Manicure tradicional", descricao: "Cuidado completo das unhas e cutículas, com esmaltação.", preco: "R$ [valor]", duracao: "[duração]" },
   { nome: "Esmaltação em gel", descricao: "Cor e brilho com acabamento duradouro.", preco: "R$ [valor]", duracao: "[duração]" },
@@ -219,7 +215,6 @@ const SERVICOS = [
   { nome: "Manutenção", descricao: "Renovação e ajustes para manter o acabamento impecável.", preco: "R$ [valor]", duracao: "[duração]" },
   { nome: "Spa das mãos", descricao: "Esfoliação e hidratação para um momento de cuidado extra.", preco: "R$ [valor]", duracao: "[duração]" }
 ];
-/* ============================================ */
 
 const wa = t => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(t)}`;
 const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
